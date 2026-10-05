@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Worksheet_Veterinary_Parasitology_Nematodes</title>
+<style>
+:root{--paper:#FFF;--wash:#EDF1F5;--ink:#22303C;--muted:#66737F;--navy:#123A5E;--navy2:#1B4E7C;--sky:#DCEAF5;--skyE:#A9C9E4;--ice:#F2F7FB;--grey:#E7EBEF;--greyE:#C6CDD4;--rule:#A9B4C0;--rule2:#5E6B79}
+*{box-sizing:border-box}
+body{margin:0;padding:16px 12px 50px;background:var(--wash);color:var(--ink);font:500 11pt/1.5 "Segoe UI",Arial,sans-serif}
+.bar{max-width:860px;margin:0 auto 14px;background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar b{margin-right:auto}
+.bar .hint{flex-basis:100%;margin:2px 0 0;font-size:8.5pt;color:var(--muted)}
+.btn{border:1px solid var(--rule2);background:var(--paper);color:var(--ink);border-radius:8px;padding:7px 13px;font:600 9.5pt "Segoe UI",Arial,sans-serif;cursor:pointer}
+.btn:hover{background:var(--grey)}
+.btn.p{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.p:hover{background:var(--navy2)}
+.sheet{max-width:860px;margin:0 auto;background:var(--paper);padding:24px 26px 30px;border-radius:4px;box-shadow:0 4px 22px rgba(18,58,94,.12)}
+[contenteditable=true] td:focus,[contenteditable=true] p:focus,[contenteditable=true] li:focus,[contenteditable=true] h1:focus{background:#FFFDF2;box-shadow:inset 0 0 0 2px var(--skyE);outline:none}
+.head{background:var(--navy);color:#fff;border-radius:10px 10px 0 0;padding:14px 18px;text-align:center}
+.head h1{margin:0;font-size:17pt;font-weight:800;letter-spacing:.2px}
+.head p{margin:4px 0 0;font-size:10.5pt;font-weight:600;color:#DCEAF5}
+.head .sch{margin:0 0 5px;font-size:8.5pt;letter-spacing:.6px;text-transform:uppercase;color:#9FC2DC}
+.idbox{border:1.5pt solid var(--navy);border-top:none;border-radius:0 0 10px 10px;padding:0;margin-bottom:14px}
+.idbox table{margin:0;border:none}
+.idbox td{border:1pt solid var(--skyE);font-size:10.5pt;font-weight:600;vertical-align:middle}
+.idbox td.k{background:var(--sky);font-weight:800;color:var(--navy);white-space:nowrap}
+.line{display:block;width:100%;min-width:0;height:15px;border-bottom:1pt dotted var(--rule2)}
+.mk{font-weight:800;font-size:11.5pt;color:var(--navy);letter-spacing:.5px;white-space:nowrap}
+h2.sec{background:var(--navy);color:#fff;font-size:12pt;font-weight:800;margin:20px 0 0;padding:7px 12px;border-radius:8px 8px 0 0;display:flex;gap:8px;align-items:center}
+h2.sec .marks{margin-left:auto;font-size:9.5pt;font-weight:600;background:#fff;color:var(--navy);border-radius:999px;padding:1px 9px}
+.instr{background:var(--sky);border:1pt solid var(--skyE);border-top:none;margin:0;padding:8px 12px;font-weight:700;font-size:10.5pt;color:var(--navy)}
+.body,.instr+*:not(.body){border:1pt solid var(--skyE);border-top:none;border-radius:0 0 8px 8px;padding:11px 15px;margin:0 0 6px;box-shadow:0 1px 0 rgba(18,58,94,.05)}
+.s{border:1pt solid var(--skyE);border-top:none;border-radius:0 0 8px 8px;margin-bottom:6px;box-shadow:0 1px 0 rgba(18,58,94,.05)}
+.s>.instr{border:none;border-bottom:1pt solid var(--skyE)}
+.s>.body,.s>.instr+*{border:none;border-radius:0;margin:0;padding:11px 15px;box-shadow:none}
+.chip{display:inline-block;border-radius:999px;padding:1px 8px;font-size:8.5pt;font-weight:700;border:1px solid}
+.dok{background:#fff;color:var(--navy);border-color:#fff}
+.sup{background:var(--grey);border-color:var(--greyE);color:#3B4854}
+.ext{background:var(--sky);border-color:var(--skyE);color:var(--navy)}
+ol.q{margin:4px 0;padding-left:22px}
+ol.q>li{margin:11px 0;font-weight:600}
+ol.q>li::marker{font-weight:800;color:var(--navy)}
+ol.opts{list-style:upper-alpha;margin:5px 0 0;padding-left:24px}
+ol.opts>li{margin:3px 0;font-weight:500}
+ol.opts>li::marker{font-weight:700;color:var(--navy2)}
+.w{display:block;border-bottom:1pt solid var(--rule);height:22px;margin:8px 0}
+.box{border:1pt solid var(--rule);border-radius:6px;min-height:70px;padding:8px;margin:6px 0;background:var(--ice)}
+.bank{background:var(--grey);border:1pt dashed var(--rule2);border-radius:6px;padding:9px 13px;margin:7px 0;font-weight:700;color:var(--navy)}
+.passage{background:var(--ice);border:1.5pt solid var(--skyE);border-radius:8px;padding:12px 16px;margin:12px 0}
+.passage h3{margin:0 0 6px;font-size:11.5pt;font-weight:800;color:var(--navy)}
+.passage ol{margin:0;padding-left:26px}
+.passage li{margin:3px 0;font-weight:600}
+.note{background:var(--grey);border-left:5px solid var(--rule2);border-radius:0 6px 6px 0;padding:8px 12px;margin:8px 0;font-size:10pt}
+table{width:100%;table-layout:fixed;border-collapse:collapse;word-break:break-word;margin:6px 0;border:1.5pt solid var(--rule2)}
+th,td{border:1pt solid var(--rule);padding:7px 9px;vertical-align:top;text-align:left;font-size:10.5pt}
+thead th{background:var(--sky);color:var(--navy);font-weight:800;font-size:10pt}
+thead{display:table-header-group}
+#key{display:none;margin-top:18px;border:2pt dashed var(--navy);border-radius:8px;padding:12px 16px;background:var(--ice)}
+#key.show{display:block}
+#key h2{margin:0 0 8px;color:var(--navy);font-size:13pt}
+#key ol{padding-left:22px}
+.foot{margin-top:20px;padding-top:8px;border-top:1pt solid var(--rule);font-size:8.5pt;color:var(--muted);display:flex;justify-content:space-between}
+[dir=rtl],[dir=rtl] body{font-family:"Segoe UI",Tahoma,"Traditional Arabic",Arial,sans-serif}
+[dir=rtl] th,[dir=rtl] td{text-align:right}
+[dir=rtl] ol.q,[dir=rtl] ol.opts,[dir=rtl] .passage ol{padding-left:0;padding-right:26px}
+[dir=rtl] ol.opts{list-style-type:arabic-indic}
+[dir=rtl] ol.q,[dir=rtl] .passage ol{list-style-type:arabic-indic}
+[dir=rtl] h2.sec .marks{margin-left:0;margin-right:auto}
+[dir=rtl] .note{border-left:none;border-right:5px solid var(--rule2);border-radius:6px 0 0 6px}
+.bi>*{display:block}
+.bi .en{direction:ltr;unicode-bidi:isolate}
+.bi .ar{direction:rtl;unicode-bidi:isolate;font-size:.95em;opacity:.9;margin-top:2px}
+.lat{unicode-bidi:isolate;direction:ltr}
+.opt{cursor:pointer;border-radius:6px;padding:2px 7px;margin:2px 0;display:list-item}
+.opt:hover{background:var(--grey)}
+.opt.ok{background:#DFF3E4;box-shadow:inset 0 0 0 2px #6FBE93}
+.opt.no{background:#FBE4E4;box-shadow:inset 0 0 0 2px #DE9A9A}
+.gap{border:none;border-bottom:1.5pt solid var(--rule2);background:transparent;font:inherit;width:135px;text-align:center;padding:1px 3px}
+.gap:focus{outline:none;background:#FFFDF2}
+.gap.ok{border-color:#4E9E6E;background:#E9F7EE}
+.gap.no{border-color:#C86A6A;background:#FCEDED}
+.fb{display:none;margin:5px 0 0;font-size:9.5pt;font-weight:600}
+.fb.show{display:block}
+.fb.good{color:#2E7D51}
+.fb.bad{color:#B0504C}
+.score{background:var(--sky);border:1px solid var(--skyE);border-radius:999px;padding:4px 13px;font-weight:700;color:var(--navy);font-size:9.5pt}
+#cheer{display:none;margin:14px 0 0;padding:14px;border-radius:8px;background:#DFF3E4;border:1.5pt solid #6FBE93;text-align:center;font-weight:700;color:#2E7D51;font-size:12pt}
+#cheer.show{display:block}
+#cheer.part{background:#FBF3DE;border-color:#DFC078;color:#87651B}
+@media print{@page{size:A4;margin:12mm}
+body{background:#fff;padding:0;font-size:10.5pt}
+.bar{display:none!important}
+.sheet{box-shadow:none;max-width:none;padding:0 2pt}
+#key{display:none!important}
+body.printkey .sheet>*:not(#key){display:none!important}
+body.printkey #key{display:block!important;border:none;background:none;padding:0;margin:0}
+table{break-inside:auto!important}
+thead{display:table-header-group}
+tr{break-inside:avoid!important}
+td,th{break-inside:auto}
+h1,h2,h3,.instr{break-after:avoid!important}
+h2.sec{break-inside:avoid}
+.passage,.box,.note,.bank{break-inside:avoid}
+ol.q>li{break-inside:avoid}
+.foot{display:none!important}
+.sheet>*:last-child{margin-bottom:0!important;padding-bottom:0!important}
+.body{padding-bottom:6px}
+.body:last-child,.body>*:last-child,.s>*:last-child{margin-bottom:0}
+.opt.ok,.opt.no,.gap.ok,.gap.no{background:none!important;box-shadow:none!important;border-color:var(--rule2)!important;color:inherit!important}
+.fb,#cheer,.score{display:none!important}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
+</style>
+<script>
+var ed=0,S={n:0,ok:0},PR=['Well done!','Excellent!','That is right!','Great work!','Perfect!'];
+var Q=function(){return document.getElementById('sheet')};
+function edit(){ed=!ed;Q().setAttribute('contenteditable',ed?'true':'false');
+document.getElementById('eb').textContent=ed?'🔒 Lock Editing':'✏️ Enable Editing';if(ed)Q().focus()}
+function key(){var k=document.getElementById('key'),o=k.classList.toggle('show');
+document.getElementById('kb').textContent=o?'🙈 Hide Answer Key':'🔑 Show Answer Key'}
+function say(host,good,msg){var f=host.querySelector(':scope>.fb');
+if(!f){f=document.createElement('p');host.appendChild(f)}
+f.className='fb show '+(good?'good':'bad');f.textContent=(good?'✅ ':'❌ ')+msg}
+function tot(){return document.querySelectorAll('ol.opts').length+document.querySelectorAll('.gap').length}
+function tally(){var d=document.getElementById('sc');if(d)d.textContent='Score '+S.ok+' / '+tot();
+var c=document.getElementById('cheer');if(!c)return;
+if(S.n&&S.n===tot()){c.className=S.ok===S.n?'show':'show part';
+c.textContent=S.ok===S.n?'🎉 Full marks — '+S.ok+' out of '+S.n+'!':'You scored '+S.ok+' out of '+S.n+'. Look at the answers in red and try those again.'}}
+function pick(el){var g=el.parentNode;if(g.dataset.done)return;g.dataset.done=1;
+var ok=el.dataset.c==='1';el.classList.add(ok?'ok':'no');
+if(!ok){var r=g.querySelector('[data-c="1"]');if(r)r.classList.add('ok')}
+S.n++;if(ok)S.ok++;
+say(g.parentNode,ok,ok?PR[Math.floor(Math.random()*PR.length)]:(el.dataset.fb||g.dataset.fb||'The correct answer is highlighted in green.'));
+tally()}
+function check(){var t=0;[].forEach.call(document.querySelectorAll('.gap'),function(i){
+if(i.dataset.done)return;var v=(i.value||'').trim().toLowerCase();if(!v)return;t++;
+var ok=(i.dataset.a||'').toLowerCase().split('|').some(function(a){return a.trim()===v});
+i.dataset.done=1;i.classList.add(ok?'ok':'no');S.n++;if(ok)S.ok++;
+say(i.closest('li')||i.parentNode,ok,ok?PR[Math.floor(Math.random()*PR.length)]:'Correct answer: '+(i.dataset.a||'').split('|')[0])});
+if(!t&&!S.n)alert('Answer some questions first, then press Check.');tally()}
+function reset(){S={n:0,ok:0};
+[].forEach.call(document.querySelectorAll('.opt,.gap'),function(e){e.classList.remove('ok','no');
+delete e.dataset.done;if(e.tagName==='INPUT')e.value=''});
+[].forEach.call(document.querySelectorAll('ol.opts'),function(e){delete e.dataset.done});
+[].forEach.call(document.querySelectorAll('.fb'),function(e){e.className='fb'});
+var c=document.getElementById('cheer');if(c)c.className='';tally()}
+function save(){if(ed)edit();var c=document.documentElement.cloneNode(true);
+c.querySelector('#sheet').setAttribute('contenteditable','false');
+var b=new Blob(['<!DOCTYPE html>\n'+c.outerHTML],{type:'text/html;charset=utf-8'}),u=URL.createObjectURL(b),a=document.createElement('a');
+a.href=u;a.download=(document.title||'Worksheet').replace(/[^\w\-]+/g,'_')+'.html';
+document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},2000)}
+function pdf(){if(ed)edit();document.body.classList.remove('printkey');window.print()}
+function pdfkey(){if(ed)edit();document.body.classList.add('printkey');window.print();
+setTimeout(function(){document.body.classList.remove('printkey')},500)}
+document.addEventListener('DOMContentLoaded',tally);
+</script>
+</head>
+<body>
+<div class="bar">
+  <b>Worksheet Viewer</b>
+  <span class="score" id="sc">Score 0 / 0</span>
+  <button class="btn p" onclick="check()">✅ Check answers</button>
+  <button class="btn" onclick="reset()">↺ Reset</button>
+  <button class="btn" id="eb" onclick="edit()">✏️ Enable Editing</button>
+  <button class="btn" id="kb" onclick="key()">🔑 Show Answer Key</button>
+  <button class="btn" onclick="save()">💾 Save</button>
+  <button class="btn" onclick="pdf()">⬇ Download PDF</button>
+  <button class="btn" onclick="pdfkey()">🔑 PDF of Key</button>
+  <p class="hint">Download PDF prints the student sheet only — the answer key is never included. In the print dialog, untick <b>Headers and footers</b> so the file path does not appear on the page.</p>
+</div>
+
+<div class="sheet" id="sheet">
+  <div class="head">
+    <p class="sch">Faculty of Veterinary Medicine</p>
+    <h1>Parasitology: Nematodes</h1>
+    <p>Patch 3 · Nematoda</p>
+  </div>
+  
+  <div class="idbox">
+    <table>
+      <colgroup><col style="width:12%"><col style="width:38%"><col style="width:12%"><col style="width:38%"></colgroup>
+      <tr>
+        <td class="k">Name</td>
+        <td><span class="line">&nbsp;</span></td>
+        <td class="k">Class</td>
+        <td><span class="line">&nbsp;</span></td>
+      </tr>
+      <tr>
+        <td class="k">Date</td>
+        <td><span class="line">&nbsp;</span></td>
+        <td class="k" style="text-align:right; padding-right:16px">Mark</td>
+        <td style="text-align:center"><span class="mk">____ / 20</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <h2 class="sec">Section A: General Characteristics <span class="chip dok">DOK 1</span><span class="marks">5 marks</span></h2>
+  <div class="s">
+    <p class="instr">Choose the correct answer.</p>
+    <div class="body">
+      <ol class="q">
+        <li>Which of the following is a common name for nematodes?
+          <ol class="opts" data-fb="Nematodes are unsegmented roundworms. Flatworms are Platyhelminthes.">
+            <li class="opt" onclick="pick(this)">Flatworms</li>
+            <li class="opt" data-c="1" onclick="pick(this)">Roundworms</li>
+            <li class="opt" onclick="pick(this)">Tapeworms</li>
+            <li class="opt" onclick="pick(this)">Flukes</li>
+          </ol>
+        </li>
+        <li>What type of body cavity do nematodes possess?
+          <ol class="opts" data-fb="Nematodes have a pseudocoelom, which is a fluid-filled cavity that is not completely lined by mesoderm.">
+            <li class="opt" onclick="pick(this)">Acoelomate</li>
+            <li class="opt" data-c="1" onclick="pick(this)">Pseudocoelomate</li>
+            <li class="opt" onclick="pick(this)">Eucoelomate</li>
+            <li class="opt" onclick="pick(this)">Hemocoelomate</li>
+          </ol>
+        </li>
+        <li>Which of these nematode species is commonly known as the canine heartworm?
+          <ol class="opts" data-fb="Dirofilaria immitis is the canine heartworm, residing in the pulmonary arteries and right ventricle.">
+            <li class="opt" onclick="pick(this)"><i>Toxocara canis</i></li>
+            <li class="opt" data-c="1" onclick="pick(this)"><i>Dirofilaria immitis</i></li>
+            <li class="opt" onclick="pick(this)"><i>Trichuris vulpis</i></li>
+            <li class="opt" onclick="pick(this)"><i>Ancylostoma caninum</i></li>
+          </ol>
+        </li>
+        <li>How do most intestinal nematodes infect their definitive host?
+          <ol class="opts" data-fb="Fecal-oral transmission via ingestion of infective eggs or L3 larvae from the environment is the most common route.">
+            <li class="opt" onclick="pick(this)">Inhalation</li>
+            <li class="opt" data-c="1" onclick="pick(this)">Ingestion of infective stages</li>
+            <li class="opt" onclick="pick(this)">Vector-borne</li>
+            <li class="opt" onclick="pick(this)">Skin penetration only</li>
+          </ol>
+        </li>
+        <li>Which morphological feature is characteristic of male nematodes but absent in females?
+          <ol class="opts" data-fb="Males often possess spicules and a copulatory bursa for mating; females lack these structures.">
+            <li class="opt" onclick="pick(this)">Cuticle</li>
+            <li class="opt" data-c="1" onclick="pick(this)">Copulatory bursa</li>
+            <li class="opt" onclick="pick(this)">Esophagus</li>
+            <li class="opt" onclick="pick(this)">Buccal capsule</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <h2 class="sec">Section B: Species Identification <span class="chip dok">DOK 2</span><span class="marks">5 marks</span></h2>
+  <div class="s">
+    <p class="instr">Type the correct letter (A-F) in the box next to each species to match it with its common name.</p>
+    <div class="body">
+      <table>
+        <colgroup><col style="width:12%"><col style="width:44%"><col style="width:44%"></colgroup>
+        <tr>
+          <td>1. <input class="gap" data-a="c" style="width:40px"></td>
+          <td><i>Toxocara canis</i></td>
+          <td>A. Barber's pole worm</td>
+        </tr>
+        <tr>
+          <td>2. <input class="gap" data-a="a" style="width:40px"></td>
+          <td><i>Haemonchus contortus</i></td>
+          <td>B. Hookworm</td>
+        </tr>
+        <tr>
+          <td>3. <input class="gap" data-a="d" style="width:40px"></td>
+          <td><i>Trichuris vulpis</i></td>
+          <td>C. Canine roundworm</td>
+        </tr>
+        <tr>
+          <td>4. <input class="gap" data-a="b" style="width:40px"></td>
+          <td><i>Ancylostoma caninum</i></td>
+          <td>D. Whipworm</td>
+        </tr>
+        <tr>
+          <td>5. <input class="gap" data-a="f" style="width:40px"></td>
+          <td><i>Oxyuris equi</i></td>
+          <td>E. Tapeworm</td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td>F. Equine pinworm</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <h2 class="sec">Section C: Structure and Life Cycles <span class="chip sup">▸ Support</span> <span class="chip dok">DOK 2</span><span class="marks">5 marks</span></h2>
+  <div class="s">
+    <p class="instr">Complete each sentence using a word from the bank.</p>
+    <div class="body">
+      <div class="bank">anus · cuticle · hypobiosis · L3 · mosquito</div>
+      <ol class="q">
+        <li>The protective outer layer of a nematode is called the <input class="gap" data-a="cuticle">.</li>
+        <li>Nematodes have a complete digestive tract that ends in an <input class="gap" data-a="anus">.</li>
+        <li>The infective larval stage for many strongylid nematodes is the <input class="gap" data-a="l3"> stage.</li>
+        <li><i>Dirofilaria immitis</i> is transmitted by a <input class="gap" data-a="mosquito"> vector.</li>
+        <li>Arrested larval development inside the host is known as <input class="gap" data-a="hypobiosis">.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h2 class="sec">Section D: Clinical Pathology <span class="chip ext">★ Extension</span> <span class="chip dok">DOK 3</span><span class="marks">5 marks</span></h2>
+  <div class="s">
+    <p class="instr">Answer in full sentences.</p>
+    <div class="body">
+      <ol class="q">
+        <li>Explain how the pathology caused by <i>Haemonchus contortus</i> leads to anemia in sheep. (1 mark)
+          <span class="w"></span><span class="w"></span>
+        </li>
+        <li>Describe the migration route of <i>Toxocara canis</i> larvae in a puppy infected in utero. (1 mark)
+          <span class="w"></span><span class="w"></span>
+        </li>
+        <li>Why is rotational grazing recommended in the management of nematode infections in ruminants? (1 mark)
+          <span class="w"></span><span class="w"></span>
+        </li>
+        <li>What is the clinical significance of a positive Baermann test in a dog? (1 mark)
+          <span class="w"></span><span class="w"></span>
+        </li>
+        <li>Compare the feeding mechanisms of canine hookworms and roundworms. (1 mark)
+          <span class="w"></span><span class="w"></span><span class="w"></span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div id="cheer"></div>
+  
+  <div id="key">
+    <h2>Answer Key — Parasitology: Nematodes (teacher only)</h2>
+    <ol>
+      <li><b>Section A:</b> 1. Roundworms (B), 2. Pseudocoelomate (B), 3. Dirofilaria immitis (B), 4. Ingestion of infective stages (B), 5. Copulatory bursa (B).</li>
+      <li><b>Section B:</b> 1. C (Canine roundworm), 2. A (Barber's pole worm), 3. D (Whipworm), 4. B (Hookworm), 5. F (Equine pinworm).</li>
+      <li><b>Section C:</b> 1. cuticle, 2. anus, 3. L3, 4. mosquito, 5. hypobiosis.</li>
+      <li><b>Section D:</b>
+        <ol style="list-style:lower-alpha">
+          <li><i>H. contortus</i> attaches to the abomasal mucosa and actively feeds on blood, causing severe blood loss and subsequent anemia.</li>
+          <li>Larvae migrate from the liver to the lungs, are coughed up the trachea, swallowed, and finally mature into adults in the small intestine.</li>
+          <li>It breaks the life cycle by moving hosts away from pastures contaminated with infective L3 larvae before they can be ingested.</li>
+          <li>It indicates the presence of live nematode larvae (e.g., lungworms) in the feces, rather than eggs, which require specific isolation methods.</li>
+          <li>Hookworms attach to the intestinal mucosa and feed directly on the host's blood; roundworms swim freely in the lumen and feed on intestinal contents (digesta).</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+</div>
+<div class="foot">
+  <span>Faculty of Veterinary Medicine · Parasitology</span>
+  <span>Page 1 of 1</span>
+</div>
+</body>
+</html>
