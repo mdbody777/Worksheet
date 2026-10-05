@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Worksheet_Year_3_Parasitology_Types_of_Parasites</title>
+<style>
+:root{--paper:#FFF;--wash:#EDF1F5;--ink:#22303C;--muted:#66737F;--navy:#123A5E;--navy2:#1B4E7C;--sky:#DCEAF5;--skyE:#A9C9E4;--ice:#F2F7FB;--grey:#E7EBEF;--greyE:#C6CDD4;--rule:#A9B4C0;--rule2:#5E6B79}
+*{box-sizing:border-box}
+body{margin:0;padding:16px 12px 50px;background:var(--wash);color:var(--ink);font:500 11pt/1.5 "Segoe UI",Arial,sans-serif}
+.bar{max-width:860px;margin:0 auto 14px;background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar b{margin-right:auto}
+.bar .hint{flex-basis:100%;margin:2px 0 0;font-size:8.5pt;color:var(--muted)}
+.btn{border:1px solid var(--rule2);background:var(--paper);color:var(--ink);border-radius:8px;padding:7px 13px;font:600 9.5pt "Segoe UI",Arial,sans-serif;cursor:pointer}
+.btn:hover{background:var(--grey)}
+.btn.p{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.p:hover{background:var(--navy2)}
+.sheet{max-width:860px;margin:0 auto;background:var(--paper);padding:24px 26px 30px;border-radius:4px;box-shadow:0 4px 22px rgba(18,58,94,.12)}
+[contenteditable=true] td:focus,[contenteditable=true] p:focus,[contenteditable=true] li:focus,[contenteditable=true] h1:focus{background:#FFFDF2;box-shadow:inset 0 0 0 2px var(--skyE);outline:none}
+.head{background:var(--navy);color:#fff;border-radius:10px 10px 0 0;padding:14px 18px;text-align:center}
+.head h1{margin:0;font-size:17pt;font-weight:800;letter-spacing:.2px}
+.head p{margin:4px 0 0;font-size:10.5pt;font-weight:600;color:#DCEAF5}
+.head .sch{margin:0 0 5px;font-size:8.5pt;letter-spacing:.6px;text-transform:uppercase;color:#9FC2DC}
+.idbox{border:1.5pt solid var(--navy);border-top:none;border-radius:0 0 10px 10px;padding:0;margin-bottom:14px}
+.idbox table{margin:0;border:none}
+.idbox td{border:1pt solid var(--skyE);font-size:10.5pt;font-weight:600;vertical-align:middle}
+.idbox td.k{background:var(--sky);font-weight:800;color:var(--navy);white-space:nowrap}
+.line{display:block;width:100%;min-width:0;height:15px;border-bottom:1pt dotted var(--rule2)}
+.mk{font-weight:800;font-size:11.5pt;color:var(--navy);letter-spacing:.5px;white-space:nowrap}
+h2.sec{background:var(--navy);color:#fff;font-size:12pt;font-weight:800;margin:20px 0 0;padding:7px 12px;border-radius:8px 8px 0 0;display:flex;gap:8px;align-items:center}
+h2.sec .marks{margin-left:auto;font-size:9.5pt;font-weight:600;background:#fff;color:var(--navy);border-radius:999px;padding:1px 9px}
+.instr{background:var(--sky);border:1pt solid var(--skyE);border-top:none;margin:0;padding:8px 12px;font-weight:700;font-size:10.5pt;color:var(--navy)}
+.body,.instr+*:not(.body){border:1pt solid var(--skyE);border-top:none;border-radius:0 0 8px 8px;padding:11px 15px;margin:0 0 6px;box-shadow:0 1px 0 rgba(18,58,94,.05)}
+.s{border:1pt solid var(--skyE);border-top:none;border-radius:0 0 8px 8px;margin-bottom:6px;box-shadow:0 1px 0 rgba(18,58,94,.05)}
+.s>.instr{border:none;border-bottom:1pt solid var(--skyE)}
+.s>.body,.s>.instr+*{border:none;border-radius:0;margin:0;padding:11px 15px;box-shadow:none}
+.chip{display:inline-block;border-radius:999px;padding:1px 8px;font-size:8.5pt;font-weight:700;border:1px solid}
+.dok{background:#fff;color:var(--navy);border-color:#fff}
+.sup{background:var(--grey);border-color:var(--greyE);color:#3B4854}
+.ext{background:var(--sky);border-color:var(--skyE);color:var(--navy)}
+ol.q{margin:4px 0;padding-left:22px}
+ol.q>li{margin:11px 0;font-weight:600}
+ol.q>li::marker{font-weight:800;color:var(--navy)}
+ol.opts{list-style:upper-alpha;margin:5px 0 0;padding-left:24px}
+ol.opts>li{margin:3px 0;font-weight:500}
+ol.opts>li::marker{font-weight:700;color:var(--navy2)}
+.w{display:block;border-bottom:1pt solid var(--rule);height:22px;margin:8px 0}
+.box{border:1pt solid var(--rule);border-radius:6px;min-height:70px;padding:8px;margin:6px 0;background:var(--ice)}
+.bank{background:var(--grey);border:1pt dashed var(--rule2);border-radius:6px;padding:9px 13px;margin:7px 0;font-weight:700;color:var(--navy)}
+.passage{background:var(--ice);border:1.5pt solid var(--skyE);border-radius:8px;padding:12px 16px;margin:12px 0}
+.passage h3{margin:0 0 6px;font-size:11.5pt;font-weight:800;color:var(--navy)}
+.passage ol{margin:0;padding-left:26px}
+.passage li{margin:3px 0;font-weight:600}
+.note{background:var(--grey);border-left:5px solid var(--rule2);border-radius:0 6px 6px 0;padding:8px 12px;margin:8px 0;font-size:10pt}
+table{width:100%;table-layout:fixed;border-collapse:collapse;word-break:break-word;margin:6px 0;border:1.5pt solid var(--rule2)}
+th,td{border:1pt solid var(--rule);padding:7px 9px;vertical-align:top;text-align:left;font-size:10.5pt}
+thead th{background:var(--sky);color:var(--navy);font-weight:800;font-size:10pt}
+thead{display:table-header-group}
+#key{display:none;margin-top:18px;border:2pt dashed var(--navy);border-radius:8px;padding:12px 16px;background:var(--ice)}
+#key.show{display:block}
+#key h2{margin:0 0 8px;color:var(--navy);font-size:13pt}
+#key ol{padding-left:22px}
+.foot{margin-top:20px;padding-top:8px;border-top:1pt solid var(--rule);font-size:8.5pt;color:var(--muted);display:flex;justify-content:space-between}
+[dir=rtl],[dir=rtl] body{font-family:"Segoe UI",Tahoma,"Traditional Arabic",Arial,sans-serif}
+[dir=rtl] th,[dir=rtl] td{text-align:right}
+[dir=rtl] ol.q,[dir=rtl] ol.opts,[dir=rtl] .passage ol{padding-left:0;padding-right:26px}
+[dir=rtl] ol.opts{list-style-type:arabic-indic}
+[dir=rtl] ol.q,[dir=rtl] .passage ol{list-style-type:arabic-indic}
+[dir=rtl] h2.sec .marks{margin-left:0;margin-right:auto}
+[dir=rtl] .note{border-left:none;border-right:5px solid var(--rule2);border-radius:6px 0 0 6px}
+.bi>*{display:block}
+.bi .en{direction:ltr;unicode-bidi:isolate}
+.bi .ar{direction:rtl;unicode-bidi:isolate;font-size:.95em;opacity:.9;margin-top:2px}
+.lat{unicode-bidi:isolate;direction:ltr}
+.opt{cursor:pointer;border-radius:6px;padding:2px 7px;margin:2px 0;display:list-item}
+.opt:hover{background:var(--grey)}
+.opt.ok{background:#DFF3E4;box-shadow:inset 0 0 0 2px #6FBE93}
+.opt.no{background:#FBE4E4;box-shadow:inset 0 0 0 2px #DE9A9A}
+.gap{border:none;border-bottom:1.5pt solid var(--rule2);background:transparent;font:inherit;width:135px;text-align:center;padding:1px 3px}
+.gap:focus{outline:none;background:#FFFDF2}
+.gap.ok{border-color:#4E9E6E;background:#E9F7EE}
+.gap.no{border-color:#C86A6A;background:#FCEDED}
+.fb{display:none;margin:5px 0 0;font-size:9.5pt;font-weight:600}
+.fb.show{display:block}
+.fb.good{color:#2E7D51}
+.fb.bad{color:#B0504C}
+.score{background:var(--sky);border:1px solid var(--skyE);border-radius:999px;padding:4px 13px;font-weight:700;color:var(--navy);font-size:9.5pt}
+#cheer{display:none;margin:14px 0 0;padding:14px;border-radius:8px;background:#DFF3E4;border:1.5pt solid #6FBE93;text-align:center;font-weight:700;color:#2E7D51;font-size:12pt}
+#cheer.show{display:block}
+#cheer.part{background:#FBF3DE;border-color:#DFC078;color:#87651B}
+@media print{@page{size:A4;margin:12mm}
+body{background:#fff;padding:0;font-size:10.5pt}
+.bar{display:none!important}
+.sheet{box-shadow:none;max-width:none;padding:0 2pt}
+#key{display:none!important}
+body.printkey .sheet>*:not(#key){display:none!important}
+body.printkey #key{display:block!important;border:none;background:none;padding:0;margin:0}
+table{break-inside:auto!important}
+thead{display:table-header-group}
+tr{break-inside:avoid!important}
+td,th{break-inside:auto}
+h1,h2,h3,.instr{break-after:avoid!important}
+h2.sec{break-inside:avoid}
+.passage,.box,.note,.bank{break-inside:avoid}
+ol.q>li{break-inside:avoid}
+.foot{display:none!important}
+.sheet>*:last-child{margin-bottom:0!important;padding-bottom:0!important}
+.body{padding-bottom:6px}
+.body:last-child,.body>*:last-child,.s>*:last-child{margin-bottom:0}
+.opt.ok,.opt.no,.gap.ok,.gap.no{background:none!important;box-shadow:none!important;border-color:var(--rule2)!important;color:inherit!important}
+.fb,#cheer,.score{display:none!important}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
+</style>
+<script>
+var ed=0,S={n:0,ok:0},PR=['Well done!','Excellent!','That is right!','Great work!','Perfect!'];
+var Q=function(){return document.getElementById('sheet')};
+function edit(){ed=!ed;Q().setAttribute('contenteditable',ed?'true':'false');
+document.getElementById('eb').textContent=ed?'🔒 Lock Editing':'✏️ Enable Editing';if(ed)Q().focus()}
+function key(){var k=document.getElementById('key'),o=k.classList.toggle('show');
+document.getElementById('kb').textContent=o?'🙈 Hide Answer Key':'🔑 Show Answer Key'}
+function say(host,good,msg){var f=host.querySelector(':scope>.fb');
+if(!f){f=document.createElement('p');host.appendChild(f)}
+f.className='fb show '+(good?'good':'bad');f.textContent=(good?'✅ ':'❌ ')+msg}
+function tot(){return document.querySelectorAll('ol.opts').length+document.querySelectorAll('.gap').length}
+function tally(){var d=document.getElementById('sc');if(d)d.textContent='Score '+S.ok+' / '+tot();
+var c=document.getElementById('cheer');if(!c)return;
+if(S.n&&S.n===tot()){c.className=S.ok===S.n?'show':'show part';
+c.textContent=S.ok===S.n?'🎉 Full marks — '+S.ok+' out of '+S.n+'!':'You scored '+S.ok+' out of '+S.n+'. Look at the answers in red and try those again.'}}
+function pick(el){var g=el.parentNode;if(g.dataset.done)return;g.dataset.done=1;
+var ok=el.dataset.c==='1';el.classList.add(ok?'ok':'no');
+if(!ok){var r=g.querySelector('[data-c="1"]');if(r)r.classList.add('ok')}
+S.n++;if(ok)S.ok++;
+say(g.parentNode,ok,ok?PR[Math.floor(Math.random()*PR.length)]:(el.dataset.fb||g.dataset.fb||'The correct answer is highlighted in green.'));
+tally()}
+function check(){var t=0;[].forEach.call(document.querySelectorAll('.gap'),function(i){
+if(i.dataset.done)return;var v=(i.value||'').trim().toLowerCase();if(!v)return;t++;
+var ok=(i.dataset.a||'').toLowerCase().split('|').some(function(a){return a.trim()===v});
+i.dataset.done=1;i.classList.add(ok?'ok':'no');S.n++;if(ok)S.ok++;
+say(i.closest('li')||i.parentNode,ok,ok?PR[Math.floor(Math.random()*PR.length)]:'Correct answer: '+(i.dataset.a||'').split('|')[0])});
+if(!t&&!S.n)alert('Answer some questions first, then press Check.');tally()}
+function reset(){S={n:0,ok:0};
+[].forEach.call(document.querySelectorAll('.opt,.gap'),function(e){e.classList.remove('ok','no');
+delete e.dataset.done;if(e.tagName==='INPUT')e.value=''});
+[].forEach.call(document.querySelectorAll('ol.opts'),function(e){delete e.dataset.done});
+[].forEach.call(document.querySelectorAll('.fb'),function(e){e.className='fb'});
+var c=document.getElementById('cheer');if(c)c.className='';tally()}
+function save(){if(ed)edit();var c=document.documentElement.cloneNode(true);
+c.querySelector('#sheet').setAttribute('contenteditable','false');
+var b=new Blob(['<!DOCTYPE html>\n'+c.outerHTML],{type:'text/html;charset=utf-8'}),u=URL.createObjectURL(b),a=document.createElement('a');
+a.href=u;a.download=(document.title||'Worksheet').replace(/[^\w\-]+/g,'_')+'.html';
+document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},2000)}
+function pdf(){if(ed)edit();document.body.classList.remove('printkey');window.print()}
+function pdfkey(){if(ed)edit();document.body.classList.add('printkey');window.print();
+setTimeout(function(){document.body.classList.remove('printkey')},500)}
+document.addEventListener('DOMContentLoaded',tally);
+</script>
+</head>
+<body>
+
+<div class="bar">
+  <b>Types of Parasites</b>
+  <span class="score" id="sc">Score 0 / 0</span>
+  <button class="btn p" onclick="check()">✅ Check answers</button>
+  <button class="btn" onclick="reset()">↺ Reset</button>
+  <button class="btn" id="eb" onclick="edit()">✏️ Enable Editing</button>
+  <button class="btn" id="kb" onclick="key()">🔑 Show Answer Key</button>
+  <button class="btn" onclick="save()">💾 Save</button>
+  <button class="btn" onclick="pdf()">⬇ Download PDF</button>
+  <button class="btn" onclick="pdfkey()">🔑 PDF of Key</button>
+  <p class="hint">Download PDF prints the student sheet only — the answer key is never included. In the print dialog, untick <b>Headers and footers</b> so the file path does not appear on the page.</p>
+</div>
+
+<div class="sheet" id="sheet">
+
+<div class="head">
+  <p class="sch">Faculty of Veterinary Medicine · Parasitology Department · Zagazig University</p>
+  <h1>Worksheet: Types of Parasites</h1>
+  <p>Year 3 Parasitology</p>
+</div>
+
+<div class="idbox">
+  <table>
+    <colgroup><col width="15%"><col width="35%"><col width="15%"><col width="20%"><col width="15%"></colgroup>
+    <tr>
+      <td class="k">Name</td><td><span class="line">&nbsp;</span></td>
+      <td class="k">Class</td><td><span class="line">&nbsp;</span></td>
+      <td class="k">Date</td><td><span class="line">&nbsp;</span></td>
+      <td class="k">Mark</td><td style="text-align:center"><span class="mk">____ / 20</span></td>
+    </tr>
+  </table>
+</div>
+
+<h2 class="sec">Section A: Multiple Choice <span class="chip dok">DOK 1</span><span class="marks">5 marks</span></h2>
+<div class="s">
+  <p class="instr">Choose the correct answer.</p>
+  <div class="body">
+    <ol class="q">
+      <li>Which of the following describes a parasite that is entirely dependent upon a host for its survival and cannot live independently?
+        <ol class="opts" data-fb="An obligate parasite requires a host at some or all stages to complete its life cycle.">
+          <li class="opt" onclick="pick(this)">Facultative parasite</li>
+          <li class="opt" onclick="pick(this)">Accidental parasite</li>
+          <li class="opt" data-c="1" onclick="pick(this)">Obligate parasite</li>
+        </ol>
+      </li>
+      <li>What type of host harbors the adult, sexual, or mature stages of a parasite?
+        <ol class="opts" data-fb="The definitive (or final) host is where sexual reproduction of the parasite takes place.">
+          <li class="opt" data-c="1" onclick="pick(this)">Definitive host</li>
+          <li class="opt" onclick="pick(this)">Intermediate host</li>
+          <li class="opt" onclick="pick(this)">Paratenic host</li>
+        </ol>
+      </li>
+      <li>Ectoparasites primarily infest which part of the host?
+        <ol class="opts" data-fb="Ecto- means outside. They live on the surface of the host (e.g., ticks, fleas).">
+          <li class="opt" onclick="pick(this)">Internal organs</li>
+          <li class="opt" onclick="pick(this)">The bloodstream</li>
+          <li class="opt" data-c="1" onclick="pick(this)">External body surfaces</li>
+        </ol>
+      </li>
+      <li>A parasite that visits the host only to feed and then leaves is known as a:
+        <ol class="opts" data-fb="Temporary parasites, like mosquitoes, only interact with the host briefly for a blood meal.">
+          <li class="opt" data-c="1" onclick="pick(this)">Temporary parasite</li>
+          <li class="opt" onclick="pick(this)">Permanent parasite</li>
+          <li class="opt" onclick="pick(this)">Stationary parasite</li>
+        </ol>
+      </li>
+      <li>A host in which the parasite survives without undergoing any further development is called a:
+        <ol class="opts" data-fb="In a paratenic (transport) host, the parasite remains viable but does not grow or multiply.">
+          <li class="opt" onclick="pick(this)">Reservoir host</li>
+          <li class="opt" data-c="1" onclick="pick(this)">Paratenic host</li>
+          <li class="opt" onclick="pick(this)">Intermediate host</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<h2 class="sec">Section B: Matching <span class="chip dok">DOK 2</span><span class="marks">5 marks</span></h2>
+<div class="s">
+  <p class="instr">Match each term to its correct definition. Type the letter in the gap.</p>
+  <div class="body">
+    <table>
+      <colgroup><col width="6%"><col width="25%"><col width="16%"><col width="6%"><col width="47%"></colgroup>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Term</th>
+          <th>Answer</th>
+          <th></th>
+          <th>Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>6.</td>
+          <td>Endoparasite</td>
+          <td><input class="gap" data-a="a"></td>
+          <td>A.</td>
+          <td>An organism that lives inside the body or tissues of the host.</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>Hyperparasite</td>
+          <td><input class="gap" data-a="c"></td>
+          <td>B.</td>
+          <td>A parasite that infects a host species it does not normally inhabit.</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>Accidental parasite</td>
+          <td><input class="gap" data-a="b"></td>
+          <td>C.</td>
+          <td>A parasite whose own host is also a parasite.</td>
+        </tr>
+        <tr>
+          <td>9.</td>
+          <td>Intermediate host</td>
+          <td><input class="gap" data-a="e"></td>
+          <td>D.</td>
+          <td>A host that maintains a parasite population in nature and serves as a source of infection.</td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td>Reservoir host</td>
+          <td><input class="gap" data-a="d"></td>
+          <td>E.</td>
+          <td>A host harboring the larval or asexual stages of the parasite.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>F.</td>
+          <td>A completely free-living organism that never requires a host to survive.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h2 class="sec">Section C: Gap-fill <span class="chip dok">DOK 2</span><span class="marks">5 marks</span></h2>
+<div class="s">
+  <p class="instr">Complete each sentence using the words from the bank.</p>
+  <div class="body">
+    <span class="chip sup">▸ Support</span>
+    <div class="bank">zoonosis &nbsp;·&nbsp; mechanical &nbsp;·&nbsp; commensalism &nbsp;·&nbsp; pathogenic &nbsp;·&nbsp; biological</div>
+    <ol class="q" start="11">
+      <li>A disease naturally transmitted between vertebrate animals and humans is referred to as a <input class="gap" data-a="zoonosis">.</li>
+      <li>A <input class="gap" data-a="mechanical"> vector simply transports the parasite on its body without the parasite multiplying or developing inside it.</li>
+      <li>In a <input class="gap" data-a="commensalism"> relationship, one organism benefits while the other is neither harmed nor helped.</li>
+      <li>Parasites that cause disease and significant clinical harm to the host are described as <input class="gap" data-a="pathogenic">.</li>
+      <li>A <input class="gap" data-a="biological"> vector is essential for the life cycle of the parasite, as the parasite must undergo development or multiplication within it before becoming infective.</li>
+    </ol>
+  </div>
+</div>
+
+<h2 class="sec">Section D: Short Answer <span class="chip ext">★ Extension</span> <span class="chip dok">DOK 3</span><span class="marks">5 marks</span></h2>
+<div class="s">
+  <p class="instr">Write your answers in full sentences.</p>
+  <div class="body">
+    <ol class="q" start="16">
+      <li>Explain the primary difference between a biological vector and a paratenic host in a parasite's life cycle.
+        <span class="w"></span><span class="w"></span>
+      </li>
+      <li>Why is a facultative parasite considered highly adaptable compared to an obligate parasite?
+        <span class="w"></span><span class="w"></span>
+      </li>
+      <li>Briefly define the term "host specificity" in veterinary parasitology.
+        <span class="w"></span><span class="w"></span>
+      </li>
+      <li>How does an accidental (incidental) parasite typically behave in an unusual host, and why might it fail to complete its life cycle?
+        <span class="w"></span><span class="w"></span>
+      </li>
+      <li>From an evolutionary perspective, why is it generally disadvantageous for a highly adapted parasite to rapidly kill its definitive host?
+        <span class="w"></span><span class="w"></span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div id="cheer"></div>
+
+<div id="key">
+  <h2>Answer Key — Types of Parasites (teacher only)</h2>
+  <ol>
+    <li><b>C</b> — Obligate parasite (1 mark)</li>
+    <li><b>A</b> — Definitive host (1 mark)</li>
+    <li><b>C</b> — External body surfaces (1 mark)</li>
+    <li><b>A</b> — Temporary parasite (1 mark)</li>
+    <li><b>B</b> — Paratenic host (1 mark)</li>
+    <li><b>A</b> — Endoparasite (1 mark)</li>
+    <li><b>C</b> — Hyperparasite (1 mark)</li>
+    <li><b>B</b> — Accidental parasite (1 mark)</li>
+    <li><b>E</b> — Intermediate host (1 mark)</li>
+    <li><b>D</b> — Reservoir host (1 mark)</li>
+    <li><b>zoonosis</b> (1 mark)</li>
+    <li><b>mechanical</b> (1 mark)</li>
+    <li><b>commensalism</b> (1 mark)</li>
+    <li><b>pathogenic</b> (1 mark)</li>
+    <li><b>biological</b> (1 mark)</li>
+    <li><b>Acceptable range:</b> A biological vector requires the parasite to undergo essential development or multiplication inside it, while a paratenic host acts only as a refuge or transport vehicle where no development occurs. (1 mark)</li>
+    <li><b>Acceptable range:</b> A facultative parasite can survive either as a free-living organism in the environment or as a parasite depending on the conditions, whereas an obligate parasite will die without a host. (1 mark)</li>
+    <li><b>Acceptable range:</b> The degree to which a parasite is restricted to one or a few closely related host species to successfully establish and complete its life cycle. (1 mark)</li>
+    <li><b>Acceptable range:</b> It often migrates abnormally (visceral larva migrans) or causes severe reactions, and it fails to complete its life cycle because the new host's internal environment does not provide the specific cues needed for its development. (1 mark)</li>
+    <li><b>Acceptable range:</b> The definitive host provides a continuous source of nutrients, habitat, and the environment needed for sexual reproduction. Killing the host quickly destroys the parasite's own habitat and chance of reproducing. (1 mark)</li>
+  </ol>
+</div>
+
+</div>
+<div class="foot">
+  <span>Faculty of Veterinary Medicine · Parasitology Department · Zagazig University</span>
+  <span>Year 3</span>
+</div>
+
+</body>
+</html>
